@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player by Skrahs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="video-background">
+            <video class="background-video" autoplay muted loop>
+                <source src="video/video.mp4" type="video/mp4">
+                Il tuo browser non supporta il video di sfondo.
+            </video>
+        </div>
+
+        <div class="content-overlay">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <div class="logo-title">sono skrahs</div>
+                <div class="logo-description">
+                    Sono un web developer e web designer che posta su github cose per noia, questa è una di quelle.
+                </div>
+            </div>
+
+         
+            <div class="music-player">
+                <div class="song-title">No Song Playing</div>
+                <div class="controls">
+                    <button id="prevBtn">&#9664;</button>
+                    <button id="playPauseBtn">&#9654;</button>
+                    <button id="nextBtn">&#9654;&#9654;</button>
+                    <button id="loopBtn">&#128257;</button>
+                </div>
+                <div class="progress-container" id="progressContainer">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">0:00</span>
+                </div>
+                
+                <audio id="audio"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
